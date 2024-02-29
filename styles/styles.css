@@ -12,7 +12,7 @@ body, html {
     display: flex;
     align-items: center; /* This ensures vertical alignment is centered */
     justify-content: center; /* Horizontally centers content */
-    text-align: center; /* Ensures the title text is centered */
+    text-align: center; /* Ensures the title text is centered */ 
     padding: 20px;
     position: relative; /* Needed for absolute positioning of the image */
     height: 100px; /* Example height; adjust as needed */
