@@ -1,19 +1,40 @@
-body {
-    font-family: Arial;
+body, html {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
 }
 
-.container1 {
-    border: 5px solid;
-    margin: auto;
-    width: 50%;
-    padding: 15px;
-}
 
 .header {
+    background-color: black;
+    display: flex;
+    align-items: center; /* This ensures vertical alignment is centered */
+    justify-content: center; /* Horizontally centers content */
+    text-align: center; /* Ensures the title text is centered */
     padding: 20px;
-    text-align: center;
-    background: black;
+    position: relative; /* Needed for absolute positioning of the image */
+    height: 100px; /* Example height; adjust as needed */
+}
+
+.header-image {
+    position: absolute;
+    left: 60px; /* Adjust based on desired spacing from the left edge */
+    height: 70%; /* Adjust based on header height or specific size requirements */
+    top: 50%;
+    transform: translateY(-50%); /* Centers the image vertically */
+}
+
+.header-title {
+    z-index: 1;
     color: white;
-    font-size: 10px;
+    font-size: 30px; /* Adjust font size as needed */
+    width: 100%; /* Ensures the title can center itself in the header space */
+}
+.container1 {
+    /* border: 5px solid; */
+    margin: 20px;
+    width: 50%;
+    padding: 15px;
 }
