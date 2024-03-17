@@ -78,7 +78,7 @@ tr:nth-child(even) {
 .leaderboard-item {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px; /* Increased padding for more space */
+  padding: 20px 30px; /* Increased padding for more space */
   border-bottom: 2px solid #eee; /* Thicker bottom border */
   font-size: 50px; /* Larger font size for better readability */
 }
