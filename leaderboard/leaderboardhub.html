@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .categories {
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #toggleButton {
+            padding-top: 5%;
+            cursor: pointer;
+            color: red;
+            text-decoration:dashed;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;color: mediumspringgreen;">Leaderboard HUB!</h1>
+    <h2 id="toggleButton">AmogUS JUMP!</h1>
+    <div class="categories">
+        <a href="./amogusjump100%.html" class="category-link">100%</a><br>
+        <a href="./amogusjumpany%.html" class="category-link">Any%</a><br>
+        <!-- Add more links as needed -->
+    </div>
+
+    
+    <script>
+        document.getElementById("toggleButton").onclick = function() {
+            var categories = document.querySelector(".categories");
+            if (categories.style.display === "none") {
+                categories.style.display = "block";
+            } else {
+                categories.style.display = "none";
+            }
+        };
+        </script>
+</body>
+<footer style="margin-top: 30%;text-align: center;">
+    
+    <a href="https://greeningsiren.github.io/">Go to main page!</a>
+</footer>
+</html>
