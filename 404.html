@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/GS.png">
+    <title>Redirect</title>
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+
+        // Check if the path is related to /leaderboards
+        if (path.startsWith('/old/leaderboards')) {
+            // Remove '/old/leaderboards' from the path and construct the new URL on the free.bg site
+            const newPath = path.replace('/old/leaderboards', '');
+            const newUrl = "https://greeningsiren.free.bg/leaderboards" + newPath;
+
+            // Redirect to the new URL
+            window.location.replace(newUrl);
+        } else {
+            // If the path is not related to /leaderboards, redirect to the main GitHub Pages site
+            window.location.replace("https://greeningsiren.github.io/old/");
+        }
+    </script>
+    <style>
+        body {
+            background-color: #242424;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+</body>
+</html>
