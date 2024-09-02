@@ -16,7 +16,7 @@
             const newUrl = "https://greeningsiren.free.bg/leaderboards" + newPath;
 
             // Redirect to the new URL
-            window.location.replace(newUrl);
+            setTimeout(() => {window.location.replace(newUrl);}, 1500);
         } else {
             // If the path is not related to /leaderboards, redirect to the main GitHub Pages site
             window.location.replace("https://greeningsiren.github.io/old/");
